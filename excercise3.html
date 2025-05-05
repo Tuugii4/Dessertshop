@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc3</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        display: inline-block;
+    }
+    #container {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+    }
+    #box1 {
+        background-color: red;
+    }
+    #box2 {
+        background-color: green;
+    }
+    #box3 {
+        background-color: blue;
+    }
+    @media only screen and (max-width: 326px) {
+        #container {
+            flex-direction: column;
+        }
+    }
+    </style>
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+    
+</body>
+</html>
